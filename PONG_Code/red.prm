@@ -1,0 +1,17 @@
+PROMGEN: Xilinx Prom Generator P.20131013
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+promgen -w -p mcs -c FF -o D:\Alireza\ISE\PONG//red -s 8192 -u 0000 D:/Alireza/ISE/PONG/main.bit -spi 
+
+PROM D:\Alireza\ISE\PONG\red.prm map: Tue Feb 21 19:31:36 2017
+
+Calculating PROM checksum with fill value ff
+
+Format        Mcs86 (32-bit)
+Size          8192K
+PROM start    0000:0000
+PROM end      007f:ffff
+PROM checksum 7a6e1d7a
+
+        Addr1        Addr2                     Date File(s)
+    0000:0000    0005:32bf     Feb 21 18:06:02 2017 D:/Alireza/ISE/PONG/main.bit

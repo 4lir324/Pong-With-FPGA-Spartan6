@@ -1,0 +1,6 @@
+vhdl work "sync_module.vhd"
+vhdl work "start_menu.vhd"
+vhdl work "RGB_mux.vhd"
+vhdl work "play_menu.vhd"
+vhdl work "gameover_menu.vhd"
+vhdl work "main.vhd"

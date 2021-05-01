@@ -1,0 +1,17 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Tue Feb 21 21:23:06 2017
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "start_button" LOCATE = SITE "P127" LEVEL 1;
+COMP "clk" LOCATE = SITE "P50" LEVEL 1;
+COMP "reset" LOCATE = SITE "P124" LEVEL 1;
+COMP "RGB<0>" LOCATE = SITE "P115" LEVEL 1;
+COMP "RGB<1>" LOCATE = SITE "P117" LEVEL 1;
+COMP "RGB<2>" LOCATE = SITE "P119" LEVEL 1;
+COMP "h_sync" LOCATE = SITE "P112" LEVEL 1;
+COMP "button_right" LOCATE = SITE "P132" LEVEL 1;
+COMP "v_sync" LOCATE = SITE "P81" LEVEL 1;
+COMP "button_left" LOCATE = SITE "P121" LEVEL 1;
+SCHEMATIC END;
+

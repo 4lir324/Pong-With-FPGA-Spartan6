@@ -1,0 +1,11 @@
+[Inputs]
+clk
+reset
+button_left
+button_right
+start_button
+[Outputs]
+h_sync
+v_sync
+=RGB[2:0]=
+[BiDir]

@@ -1,0 +1,13 @@
+NET "clk"  	LOC = "p50"  ; 
+
+NET "RGB<0>"  LOC = "p115"  ; 
+NET "RGB<1>"  LOC = "p117"  ; 
+NET "RGB<2>"  LOC = "p119"  ; 
+
+NET "v_sync"  LOC = "p81"  ; 
+NET "h_sync"  LOC = "p112"  ; 
+
+NET "button_right"  LOC = "p132"  ;
+NET "start_button"  LOC = "p127"  ;
+NET "reset"	LOC = "p124"  ;
+NET "button_left"  LOC = "p121"  ;

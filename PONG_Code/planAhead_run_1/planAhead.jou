@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Mon Feb 06 19:50:07 2017
+# Process ID: 10740
+# Log file: D:/Alireza/ISE/PONG/planAhead_run_1/planAhead.log
+# Journal file: D:/Alireza/ISE/PONG/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source D:/Alireza/ISE/PONG/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin P30 [get_ports {RGB[2]}]
+endgroup
+set_property is_loc_fixed false [get_ports [list  {RGB[2]}]]
+set_property is_loc_fixed true [get_ports [list  {RGB[2]}]]
+set_property is_loc_fixed false [get_ports [list  {RGB[2]}]]
+set_property is_loc_fixed true [get_ports [list  {RGB[2]}]]
+undo
+undo
+undo
+startgroup
+set_property package_pin P144 [get_ports {RGB[2]}]
+endgroup

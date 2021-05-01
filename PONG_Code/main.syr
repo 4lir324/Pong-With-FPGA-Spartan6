@@ -1,0 +1,1213 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.15 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.15 secs
+ 
+--> Reading design: main.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "main.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "main"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-tqg144
+
+---- Source Options
+Top Module Name                    : main
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "D:\Alireza\ISE\PONG\sync_module.vhd" into library work
+Parsing entity <sync_module>.
+INFO:HDLCompiler:1676 - "D:\Alireza\ISE\PONG\sync_module.vhd" Line 13. declaration of a buffer port will make it difficult for you to validate this design by simulation. It is preferable to declare it as output
+INFO:HDLCompiler:1676 - "D:\Alireza\ISE\PONG\sync_module.vhd" Line 14. declaration of a buffer port will make it difficult for you to validate this design by simulation. It is preferable to declare it as output
+Parsing architecture <Behavioral> of entity <sync_module>.
+Parsing VHDL file "D:\Alireza\ISE\PONG\start_menu.vhd" into library work
+Parsing entity <start_menu>.
+Parsing architecture <Behavioral> of entity <start_menu>.
+Parsing VHDL file "D:\Alireza\ISE\PONG\RGB_mux.vhd" into library work
+Parsing entity <RGB_mux>.
+Parsing architecture <Behavioral> of entity <rgb_mux>.
+Parsing VHDL file "D:\Alireza\ISE\PONG\play_menu.vhd" into library work
+Parsing entity <play_menu>.
+INFO:HDLCompiler:1676 - "D:\Alireza\ISE\PONG\play_menu.vhd" Line 15. declaration of a buffer port will make it difficult for you to validate this design by simulation. It is preferable to declare it as output
+Parsing architecture <Behavioral> of entity <play_menu>.
+Parsing VHDL file "D:\Alireza\ISE\PONG\gameover_menu.vhd" into library work
+Parsing entity <gameover_menu>.
+Parsing architecture <Behavioral> of entity <gameover_menu>.
+Parsing VHDL file "D:\Alireza\ISE\PONG\main.vhd" into library work
+Parsing entity <main>.
+Parsing architecture <Behavioral> of entity <main>.
+INFO:HDLCompiler:1676 - "D:\Alireza\ISE\PONG\main.vhd" Line 27. declaration of a buffer port will make it difficult for you to validate this design by simulation. It is preferable to declare it as output
+INFO:HDLCompiler:1676 - "D:\Alireza\ISE\PONG\main.vhd" Line 28. declaration of a buffer port will make it difficult for you to validate this design by simulation. It is preferable to declare it as output
+INFO:HDLCompiler:1676 - "D:\Alireza\ISE\PONG\main.vhd" Line 51. declaration of a buffer port will make it difficult for you to validate this design by simulation. It is preferable to declare it as output
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <main> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <sync_module> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <start_menu> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <play_menu> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <gameover_menu> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <RGB_mux> (architecture <Behavioral>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <main>.
+    Related source file is "D:\Alireza\ISE\PONG\main.vhd".
+    Summary:
+	no macro.
+Unit <main> synthesized.
+
+Synthesizing Unit <sync_module>.
+    Related source file is "D:\Alireza\ISE\PONG\sync_module.vhd".
+    Found 10-bit register for signal <x_counter_var>.
+    Found 10-bit register for signal <y_counter_var>.
+    Found 2-bit register for signal <x_counter_div>.
+    Found 2-bit adder for signal <x_counter_div[1]_GND_6_o_add_0_OUT> created at line 42.
+    Found 10-bit adder for signal <x_counter_var[9]_GND_6_o_add_2_OUT> created at line 45.
+    Found 10-bit adder for signal <y_counter_var[9]_GND_6_o_add_6_OUT> created at line 50.
+    Found 10-bit subtractor for signal <x_counter> created at line 13.
+    Found 9-bit subtractor for signal <y_counter> created at line 14.
+    Found 10-bit comparator lessequal for signal <n0017> created at line 66
+    Found 10-bit comparator lessequal for signal <n0019> created at line 67
+    Found 9-bit comparator lessequal for signal <n0021> created at line 68
+    Found 10-bit comparator lessequal for signal <n0023> created at line 68
+    Summary:
+	inferred   5 Adder/Subtractor(s).
+	inferred  22 D-type flip-flop(s).
+	inferred   4 Comparator(s).
+	inferred   5 Multiplexer(s).
+Unit <sync_module> synthesized.
+
+Synthesizing Unit <start_menu>.
+    Related source file is "D:\Alireza\ISE\PONG\start_menu.vhd".
+    Found 25-bit register for signal <animation_timer_var>.
+    Found 1-bit register for signal <animation_on>.
+    Found 25-bit adder for signal <animation_timer_var[24]_GND_7_o_add_0_OUT> created at line 32.
+    Found 10-bit comparator lessequal for signal <n0007> created at line 41
+    Found 10-bit comparator lessequal for signal <n0009> created at line 41
+    Found 10-bit comparator lessequal for signal <n0035> created at line 47
+    Found 10-bit comparator lessequal for signal <n0037> created at line 47
+    Found 10-bit comparator lessequal for signal <n0047> created at line 49
+    Found 10-bit comparator lessequal for signal <n0050> created at line 49
+    Found 10-bit comparator lessequal for signal <n0052> created at line 49
+    Found 10-bit comparator lessequal for signal <n0063> created at line 51
+    Found 10-bit comparator lessequal for signal <n0065> created at line 51
+    Found 10-bit comparator lessequal for signal <n0069> created at line 51
+    Found 10-bit comparator lessequal for signal <n0071> created at line 51
+    Found 10-bit comparator lessequal for signal <n0087> created at line 55
+    Found 10-bit comparator lessequal for signal <n0089> created at line 55
+    Found 10-bit comparator lessequal for signal <n0093> created at line 55
+    Found 10-bit comparator lessequal for signal <n0095> created at line 55
+    Found 10-bit comparator lessequal for signal <n0099> created at line 55
+    Found 10-bit comparator lessequal for signal <n0101> created at line 55
+    Found 10-bit comparator lessequal for signal <n0107> created at line 55
+    Found 10-bit comparator lessequal for signal <n0109> created at line 55
+    Found 10-bit comparator lessequal for signal <n0113> created at line 55
+    Found 10-bit comparator lessequal for signal <n0115> created at line 55
+    Found 10-bit comparator lessequal for signal <n0119> created at line 55
+    Found 10-bit comparator lessequal for signal <n0121> created at line 55
+    Found 10-bit comparator lessequal for signal <n0137> created at line 59
+    Found 10-bit comparator lessequal for signal <n0139> created at line 59
+    Found 10-bit comparator lessequal for signal <n0143> created at line 59
+    Found 10-bit comparator lessequal for signal <n0145> created at line 59
+    Found 10-bit comparator lessequal for signal <n0149> created at line 59
+    Found 10-bit comparator lessequal for signal <n0153> created at line 59
+    Found 10-bit comparator lessequal for signal <n0155> created at line 59
+    Found 10-bit comparator lessequal for signal <n0159> created at line 59
+    Found 10-bit comparator lessequal for signal <n0161> created at line 59
+    Found 10-bit comparator lessequal for signal <n0165> created at line 59
+    Found 10-bit comparator lessequal for signal <n0170> created at line 59
+    Found 10-bit comparator lessequal for signal <n0172> created at line 59
+    Found 10-bit comparator lessequal for signal <n0176> created at line 59
+    Found 10-bit comparator lessequal for signal <n0180> created at line 59
+    Found 10-bit comparator lessequal for signal <n0182> created at line 59
+    Found 10-bit comparator lessequal for signal <n0186> created at line 59
+    Found 10-bit comparator lessequal for signal <n0188> created at line 59
+    Found 10-bit comparator lessequal for signal <n0192> created at line 59
+    Found 10-bit comparator lessequal for signal <n0194> created at line 59
+    Found 10-bit comparator lessequal for signal <n0198> created at line 59
+    Found 10-bit comparator lessequal for signal <n0200> created at line 59
+    Found 10-bit comparator lessequal for signal <n0228> created at line 67
+    Found 10-bit comparator lessequal for signal <n0252> created at line 71
+    Found 10-bit comparator lessequal for signal <n0254> created at line 71
+    Found 10-bit comparator lessequal for signal <n0357> created at line 91
+    Found 10-bit comparator lessequal for signal <n0445> created at line 113
+    Found 10-bit comparator lessequal for signal <n0447> created at line 113
+    Found 10-bit comparator lessequal for signal <n0450> created at line 113
+    Found 10-bit comparator lessequal for signal <n0452> created at line 113
+    Found 10-bit comparator lessequal for signal <n0456> created at line 113
+    Found 10-bit comparator lessequal for signal <n0458> created at line 113
+    Found 10-bit comparator lessequal for signal <n0462> created at line 113
+    Found 10-bit comparator lessequal for signal <n0464> created at line 113
+    Found 10-bit comparator lessequal for signal <n0472> created at line 114
+    Found 10-bit comparator lessequal for signal <n0475> created at line 114
+    Found 10-bit comparator lessequal for signal <n0477> created at line 114
+    Found 10-bit comparator lessequal for signal <n0481> created at line 114
+    Found 10-bit comparator lessequal for signal <n0483> created at line 114
+    Found 10-bit comparator lessequal for signal <n0487> created at line 114
+    Found 10-bit comparator lessequal for signal <n0489> created at line 114
+    Found 10-bit comparator lessequal for signal <n0499> created at line 115
+    Found 10-bit comparator lessequal for signal <n0501> created at line 115
+    Found 10-bit comparator lessequal for signal <n0505> created at line 115
+    Found 10-bit comparator lessequal for signal <n0507> created at line 115
+    Found 10-bit comparator lessequal for signal <n0511> created at line 115
+    Found 10-bit comparator lessequal for signal <n0513> created at line 115
+    Found 10-bit comparator lessequal for signal <n0517> created at line 115
+    Found 10-bit comparator lessequal for signal <n0521> created at line 115
+    Found 10-bit comparator lessequal for signal <n0523> created at line 115
+    Found 10-bit comparator lessequal for signal <n0528> created at line 115
+    Found 10-bit comparator lessequal for signal <n0530> created at line 115
+    Found 10-bit comparator lessequal for signal <n0534> created at line 115
+    Found 10-bit comparator lessequal for signal <n0536> created at line 115
+    Found 10-bit comparator lessequal for signal <n0540> created at line 115
+    Found 10-bit comparator lessequal for signal <n0542> created at line 115
+    Found 10-bit comparator lessequal for signal <n0546> created at line 115
+    Found 10-bit comparator lessequal for signal <n0548> created at line 115
+    Found 10-bit comparator lessequal for signal <n0552> created at line 115
+    Found 10-bit comparator lessequal for signal <n0554> created at line 115
+    Found 10-bit comparator lessequal for signal <n0562> created at line 116
+    Found 10-bit comparator lessequal for signal <n0566> created at line 116
+    Found 10-bit comparator lessequal for signal <n0568> created at line 116
+    Found 10-bit comparator lessequal for signal <n0572> created at line 116
+    Found 10-bit comparator lessequal for signal <n0574> created at line 116
+    Found 10-bit comparator lessequal for signal <n0578> created at line 116
+    Found 10-bit comparator lessequal for signal <n0580> created at line 116
+    Found 10-bit comparator lessequal for signal <n0584> created at line 116
+    Found 10-bit comparator lessequal for signal <n0586> created at line 116
+    Found 10-bit comparator lessequal for signal <n0590> created at line 116
+    Found 10-bit comparator lessequal for signal <n0595> created at line 116
+    Found 10-bit comparator lessequal for signal <n0597> created at line 116
+    Found 10-bit comparator lessequal for signal <n0602> created at line 116
+    Found 10-bit comparator lessequal for signal <n0611> created at line 117
+    Found 10-bit comparator lessequal for signal <n0619> created at line 117
+    Found 10-bit comparator lessequal for signal <n0621> created at line 117
+    Found 10-bit comparator lessequal for signal <n0627> created at line 117
+    Found 10-bit comparator lessequal for signal <n0641> created at line 118
+    Found 10-bit comparator lessequal for signal <n0645> created at line 118
+    Found 10-bit comparator lessequal for signal <n0659> created at line 119
+    Found 10-bit comparator lessequal for signal <n0663> created at line 119
+    Found 10-bit comparator lessequal for signal <n0669> created at line 119
+    Found 10-bit comparator lessequal for signal <n0671> created at line 119
+    Found 10-bit comparator lessequal for signal <n0699> created at line 121
+    Found 10-bit comparator lessequal for signal <n0705> created at line 121
+    Found 10-bit comparator lessequal for signal <n0713> created at line 124
+    Found 10-bit comparator lessequal for signal <n0715> created at line 124
+    Found 10-bit comparator lessequal for signal <n0718> created at line 124
+    Found 10-bit comparator lessequal for signal <n0720> created at line 124
+    Found 10-bit comparator lessequal for signal <n0724> created at line 124
+    Found 10-bit comparator lessequal for signal <n0726> created at line 124
+    Found 10-bit comparator lessequal for signal <n0732> created at line 124
+    Found 10-bit comparator lessequal for signal <n0734> created at line 124
+    Found 10-bit comparator lessequal for signal <n0738> created at line 124
+    Found 10-bit comparator lessequal for signal <n0760> created at line 130
+    Found 10-bit comparator lessequal for signal <n0763> created at line 130
+    Found 10-bit comparator lessequal for signal <n0768> created at line 130
+    Found 10-bit comparator lessequal for signal <n0772> created at line 130
+    Found 10-bit comparator lessequal for signal <n0787> created at line 133
+    Found 10-bit comparator lessequal for signal <n0789> created at line 133
+    Found 10-bit comparator lessequal for signal <n0793> created at line 133
+    Found 10-bit comparator lessequal for signal <n0795> created at line 133
+    Found 10-bit comparator lessequal for signal <n0799> created at line 133
+    Found 10-bit comparator lessequal for signal <n0803> created at line 133
+    Found 10-bit comparator lessequal for signal <n0805> created at line 133
+    Found 10-bit comparator lessequal for signal <n0813> created at line 133
+    Found 10-bit comparator lessequal for signal <n0815> created at line 133
+    Found 10-bit comparator lessequal for signal <n0819> created at line 133
+    Found 10-bit comparator lessequal for signal <n0823> created at line 133
+    Found 10-bit comparator lessequal for signal <n0825> created at line 133
+    Found 10-bit comparator lessequal for signal <n0829> created at line 133
+    Found 10-bit comparator lessequal for signal <n0831> created at line 133
+    Found 10-bit comparator lessequal for signal <n0835> created at line 133
+    Found 10-bit comparator lessequal for signal <n0837> created at line 133
+    Found 10-bit comparator lessequal for signal <n0873> created at line 139
+    Found 10-bit comparator lessequal for signal <n0879> created at line 139
+    Found 10-bit comparator lessequal for signal <n0883> created at line 139
+    Found 10-bit comparator lessequal for signal <n0890> created at line 139
+    Found 10-bit comparator lessequal for signal <n0894> created at line 139
+    Found 10-bit comparator lessequal for signal <n0898> created at line 139
+    Found 10-bit comparator lessequal for signal <n0902> created at line 139
+    Found 10-bit comparator lessequal for signal <n0908> created at line 139
+    Found 10-bit comparator lessequal for signal <n0948> created at line 145
+    Found 10-bit comparator lessequal for signal <n1023> created at line 163
+    Found 10-bit comparator lessequal for signal <n1025> created at line 163
+    Found 10-bit comparator lessequal for signal <n1028> created at line 163
+    Found 10-bit comparator lessequal for signal <n1059> created at line 172
+    Found 10-bit comparator lessequal for signal <n1061> created at line 172
+    Found 10-bit comparator lessequal for signal <n1064> created at line 172
+    Found 10-bit comparator lessequal for signal <n1066> created at line 172
+    Found 10-bit comparator lessequal for signal <n1070> created at line 172
+    Found 10-bit comparator lessequal for signal <n1072> created at line 172
+    Found 10-bit comparator lessequal for signal <n1076> created at line 172
+    Found 10-bit comparator lessequal for signal <n1078> created at line 172
+    Found 10-bit comparator lessequal for signal <n1082> created at line 172
+    Found 10-bit comparator lessequal for signal <n1084> created at line 172
+    Found 10-bit comparator lessequal for signal <n1088> created at line 172
+    Found 10-bit comparator lessequal for signal <n1090> created at line 172
+    Found 10-bit comparator lessequal for signal <n1094> created at line 172
+    Found 10-bit comparator lessequal for signal <n1096> created at line 172
+    Found 10-bit comparator lessequal for signal <n1100> created at line 172
+    Found 10-bit comparator lessequal for signal <n1104> created at line 172
+    Found 10-bit comparator lessequal for signal <n1108> created at line 172
+    Found 10-bit comparator lessequal for signal <n1114> created at line 172
+    Found 10-bit comparator lessequal for signal <n1118> created at line 172
+    Found 10-bit comparator lessequal for signal <n1122> created at line 172
+    Found 10-bit comparator lessequal for signal <n1124> created at line 172
+    Found 10-bit comparator lessequal for signal <n1128> created at line 172
+    Found 10-bit comparator lessequal for signal <n1130> created at line 172
+    Found 10-bit comparator lessequal for signal <n1138> created at line 172
+    Found 10-bit comparator lessequal for signal <n1140> created at line 172
+    Found 10-bit comparator lessequal for signal <n1166> created at line 178
+    Found 10-bit comparator lessequal for signal <n1178> created at line 178
+    Found 10-bit comparator lessequal for signal <n1218> created at line 184
+    Found 10-bit comparator lessequal for signal <n1250> created at line 187
+    Found 10-bit comparator lessequal for signal <n1252> created at line 187
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  26 D-type flip-flop(s).
+	inferred 178 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <start_menu> synthesized.
+
+Synthesizing Unit <play_menu>.
+    Related source file is "D:\Alireza\ISE\PONG\play_menu.vhd".
+    Found 20-bit register for signal <refresh_counter>.
+    Found 1-bit register for signal <ball_y<8>>.
+    Found 1-bit register for signal <ball_y<7>>.
+    Found 1-bit register for signal <ball_y<6>>.
+    Found 1-bit register for signal <ball_y<5>>.
+    Found 1-bit register for signal <ball_y<4>>.
+    Found 1-bit register for signal <ball_y<3>>.
+    Found 1-bit register for signal <ball_y<2>>.
+    Found 1-bit register for signal <ball_y<1>>.
+    Found 1-bit register for signal <ball_y<0>>.
+    Found 1-bit register for signal <ball_x<9>>.
+    Found 1-bit register for signal <ball_x<8>>.
+    Found 1-bit register for signal <ball_x<7>>.
+    Found 1-bit register for signal <ball_x<6>>.
+    Found 1-bit register for signal <ball_x<5>>.
+    Found 1-bit register for signal <ball_x<4>>.
+    Found 1-bit register for signal <ball_x<3>>.
+    Found 1-bit register for signal <ball_x<2>>.
+    Found 1-bit register for signal <ball_x<1>>.
+    Found 1-bit register for signal <ball_x<0>>.
+    Found 1-bit register for signal <ball_x_speed<31>>.
+    Found 1-bit register for signal <ball_x_speed<30>>.
+    Found 1-bit register for signal <ball_x_speed<29>>.
+    Found 1-bit register for signal <ball_x_speed<28>>.
+    Found 1-bit register for signal <ball_x_speed<27>>.
+    Found 1-bit register for signal <ball_x_speed<26>>.
+    Found 1-bit register for signal <ball_x_speed<25>>.
+    Found 1-bit register for signal <ball_x_speed<24>>.
+    Found 1-bit register for signal <ball_x_speed<23>>.
+    Found 1-bit register for signal <ball_x_speed<22>>.
+    Found 1-bit register for signal <ball_x_speed<21>>.
+    Found 1-bit register for signal <ball_x_speed<20>>.
+    Found 1-bit register for signal <ball_x_speed<19>>.
+    Found 1-bit register for signal <ball_x_speed<18>>.
+    Found 1-bit register for signal <ball_x_speed<17>>.
+    Found 1-bit register for signal <ball_x_speed<16>>.
+    Found 1-bit register for signal <ball_x_speed<15>>.
+    Found 1-bit register for signal <ball_x_speed<14>>.
+    Found 1-bit register for signal <ball_x_speed<13>>.
+    Found 1-bit register for signal <ball_x_speed<12>>.
+    Found 1-bit register for signal <ball_x_speed<11>>.
+    Found 1-bit register for signal <ball_x_speed<10>>.
+    Found 1-bit register for signal <ball_x_speed<9>>.
+    Found 1-bit register for signal <ball_x_speed<8>>.
+    Found 1-bit register for signal <ball_x_speed<7>>.
+    Found 1-bit register for signal <ball_x_speed<6>>.
+    Found 1-bit register for signal <ball_x_speed<5>>.
+    Found 1-bit register for signal <ball_x_speed<4>>.
+    Found 1-bit register for signal <ball_x_speed<3>>.
+    Found 1-bit register for signal <ball_x_speed<2>>.
+    Found 1-bit register for signal <ball_x_speed<1>>.
+    Found 1-bit register for signal <ball_x_speed<0>>.
+    Found 1-bit register for signal <ball_y_speed<31>>.
+    Found 1-bit register for signal <ball_y_speed<30>>.
+    Found 1-bit register for signal <ball_y_speed<29>>.
+    Found 1-bit register for signal <ball_y_speed<28>>.
+    Found 1-bit register for signal <ball_y_speed<27>>.
+    Found 1-bit register for signal <ball_y_speed<26>>.
+    Found 1-bit register for signal <ball_y_speed<25>>.
+    Found 1-bit register for signal <ball_y_speed<24>>.
+    Found 1-bit register for signal <ball_y_speed<23>>.
+    Found 1-bit register for signal <ball_y_speed<22>>.
+    Found 1-bit register for signal <ball_y_speed<21>>.
+    Found 1-bit register for signal <ball_y_speed<20>>.
+    Found 1-bit register for signal <ball_y_speed<19>>.
+    Found 1-bit register for signal <ball_y_speed<18>>.
+    Found 1-bit register for signal <ball_y_speed<17>>.
+    Found 1-bit register for signal <ball_y_speed<16>>.
+    Found 1-bit register for signal <ball_y_speed<15>>.
+    Found 1-bit register for signal <ball_y_speed<14>>.
+    Found 1-bit register for signal <ball_y_speed<13>>.
+    Found 1-bit register for signal <ball_y_speed<12>>.
+    Found 1-bit register for signal <ball_y_speed<11>>.
+    Found 1-bit register for signal <ball_y_speed<10>>.
+    Found 1-bit register for signal <ball_y_speed<9>>.
+    Found 1-bit register for signal <ball_y_speed<8>>.
+    Found 1-bit register for signal <ball_y_speed<7>>.
+    Found 1-bit register for signal <ball_y_speed<6>>.
+    Found 1-bit register for signal <ball_y_speed<5>>.
+    Found 1-bit register for signal <ball_y_speed<4>>.
+    Found 1-bit register for signal <ball_y_speed<3>>.
+    Found 1-bit register for signal <ball_y_speed<2>>.
+    Found 1-bit register for signal <ball_y_speed<1>>.
+    Found 1-bit register for signal <ball_y_speed<0>>.
+    Found 1-bit register for signal <bar_x<9>>.
+    Found 1-bit register for signal <bar_x<8>>.
+    Found 1-bit register for signal <bar_x<7>>.
+    Found 1-bit register for signal <bar_x<6>>.
+    Found 1-bit register for signal <bar_x<5>>.
+    Found 1-bit register for signal <bar_x<4>>.
+    Found 1-bit register for signal <bar_x<3>>.
+    Found 1-bit register for signal <bar_x<2>>.
+    Found 1-bit register for signal <bar_x<1>>.
+    Found 1-bit register for signal <bar_x<0>>.
+    Found 11-bit subtractor for signal <GND_8_o_GND_8_o_sub_28_OUT> created at line 108.
+    Found 11-bit adder for signal <n0117> created at line 71.
+    Found 10-bit adder for signal <n0119> created at line 71.
+    Found 11-bit adder for signal <n0121> created at line 75.
+    Found 20-bit adder for signal <refresh_counter[19]_GND_8_o_add_16_OUT> created at line 94.
+    Found 10-bit adder for signal <bar_x[9]_GND_8_o_add_21_OUT> created at line 102.
+    Found 32-bit adder for signal <n0108> created at line 122.
+    Found 32-bit adder for signal <n0109> created at line 123.
+    Found 10-bit subtractor for signal <GND_8_o_GND_8_o_sub_20_OUT<9:0>> created at line 100.
+    Found 8x3-bit Read Only RAM for signal <RGB>
+    Found 9-bit comparator lessequal for signal <n0000> created at line 67
+    Found 9-bit comparator lessequal for signal <n0002> created at line 67
+    Found 10-bit comparator lessequal for signal <n0006> created at line 71
+    Found 11-bit comparator lessequal for signal <n0009> created at line 71
+    Found 9-bit comparator lessequal for signal <n0011> created at line 71
+    Found 10-bit comparator lessequal for signal <n0014> created at line 71
+    Found 10-bit comparator lessequal for signal <n0020> created at line 75
+    Found 11-bit comparator lessequal for signal <n0023> created at line 75
+    Found 9-bit comparator lessequal for signal <n0025> created at line 75
+    Found 9-bit comparator lessequal for signal <n0027> created at line 75
+    Found 10-bit comparator greater for signal <GND_8_o_bar_x[9]_LessThan_19_o> created at line 99
+    Found 10-bit comparator greater for signal <bar_x[9]_PWR_9_o_LessThan_21_o> created at line 101
+    Found 9-bit comparator lessequal for signal <n0044> created at line 106
+    Found 9-bit comparator lessequal for signal <n0046> created at line 108
+    Found 9-bit comparator lessequal for signal <n0048> created at line 108
+    Found 11-bit comparator lessequal for signal <n0051> created at line 108
+    Found 11-bit comparator lessequal for signal <n0053> created at line 108
+    Found 10-bit comparator lessequal for signal <n0060> created at line 116
+    Found 10-bit comparator lessequal for signal <n0062> created at line 118
+    Summary:
+	inferred   1 RAM(s).
+	inferred   8 Adder/Subtractor(s).
+	inferred 113 D-type flip-flop(s).
+	inferred  19 Comparator(s).
+	inferred  12 Multiplexer(s).
+Unit <play_menu> synthesized.
+
+Synthesizing Unit <gameover_menu>.
+    Related source file is "D:\Alireza\ISE\PONG\gameover_menu.vhd".
+    Found 25-bit register for signal <animation_timer_var>.
+    Found 1-bit register for signal <animation_on>.
+    Found 25-bit adder for signal <animation_timer_var[24]_GND_10_o_add_0_OUT> created at line 30.
+    Found 10-bit comparator lessequal for signal <n0007> created at line 39
+    Found 10-bit comparator lessequal for signal <n0009> created at line 39
+    Found 10-bit comparator lessequal for signal <n0012> created at line 39
+    Found 10-bit comparator lessequal for signal <n0014> created at line 39
+    Found 10-bit comparator lessequal for signal <n0029> created at line 43
+    Found 10-bit comparator lessequal for signal <n0031> created at line 43
+    Found 10-bit comparator lessequal for signal <n0034> created at line 43
+    Found 10-bit comparator lessequal for signal <n0036> created at line 43
+    Found 10-bit comparator lessequal for signal <n0040> created at line 43
+    Found 10-bit comparator lessequal for signal <n0042> created at line 43
+    Found 10-bit comparator lessequal for signal <n0046> created at line 43
+    Found 10-bit comparator lessequal for signal <n0048> created at line 43
+    Found 10-bit comparator lessequal for signal <n0064> created at line 47
+    Found 10-bit comparator lessequal for signal <n0066> created at line 47
+    Found 10-bit comparator lessequal for signal <n0070> created at line 47
+    Found 10-bit comparator lessequal for signal <n0072> created at line 47
+    Found 10-bit comparator lessequal for signal <n0076> created at line 47
+    Found 10-bit comparator lessequal for signal <n0078> created at line 47
+    Found 10-bit comparator lessequal for signal <n0084> created at line 47
+    Found 10-bit comparator lessequal for signal <n0086> created at line 47
+    Found 10-bit comparator lessequal for signal <n0090> created at line 47
+    Found 10-bit comparator lessequal for signal <n0092> created at line 47
+    Found 10-bit comparator lessequal for signal <n0096> created at line 47
+    Found 10-bit comparator lessequal for signal <n0098> created at line 47
+    Found 10-bit comparator lessequal for signal <n0102> created at line 47
+    Found 10-bit comparator lessequal for signal <n0104> created at line 47
+    Found 10-bit comparator lessequal for signal <n0108> created at line 47
+    Found 10-bit comparator lessequal for signal <n0110> created at line 47
+    Found 10-bit comparator lessequal for signal <n0126> created at line 51
+    Found 10-bit comparator lessequal for signal <n0128> created at line 51
+    Found 10-bit comparator lessequal for signal <n0132> created at line 51
+    Found 10-bit comparator lessequal for signal <n0136> created at line 51
+    Found 10-bit comparator lessequal for signal <n0138> created at line 51
+    Found 10-bit comparator lessequal for signal <n0142> created at line 51
+    Found 10-bit comparator lessequal for signal <n0144> created at line 51
+    Found 10-bit comparator lessequal for signal <n0148> created at line 51
+    Found 10-bit comparator lessequal for signal <n0150> created at line 51
+    Found 10-bit comparator lessequal for signal <n0154> created at line 51
+    Found 10-bit comparator lessequal for signal <n0156> created at line 51
+    Found 10-bit comparator lessequal for signal <n0164> created at line 51
+    Found 10-bit comparator lessequal for signal <n0166> created at line 51
+    Found 10-bit comparator lessequal for signal <n0170> created at line 51
+    Found 10-bit comparator lessequal for signal <n0172> created at line 51
+    Found 10-bit comparator lessequal for signal <n0177> created at line 51
+    Found 10-bit comparator lessequal for signal <n0193> created at line 55
+    Found 10-bit comparator lessequal for signal <n0209> created at line 59
+    Found 10-bit comparator lessequal for signal <n0239> created at line 63
+    Found 10-bit comparator lessequal for signal <n0241> created at line 63
+    Found 10-bit comparator lessequal for signal <n0268> created at line 67
+    Found 10-bit comparator lessequal for signal <n0270> created at line 67
+    Found 10-bit comparator lessequal for signal <n0294> created at line 71
+    Found 10-bit comparator lessequal for signal <n0296> created at line 71
+    Found 10-bit comparator lessequal for signal <n0314> created at line 75
+    Found 10-bit comparator lessequal for signal <n0316> created at line 75
+    Found 10-bit comparator lessequal for signal <n0323> created at line 76
+    Found 10-bit comparator lessequal for signal <n0325> created at line 76
+    Found 10-bit comparator lessequal for signal <n0328> created at line 76
+    Found 10-bit comparator lessequal for signal <n0330> created at line 76
+    Found 10-bit comparator lessequal for signal <n0334> created at line 76
+    Found 10-bit comparator lessequal for signal <n0336> created at line 76
+    Found 10-bit comparator lessequal for signal <n0340> created at line 76
+    Found 10-bit comparator lessequal for signal <n0342> created at line 76
+    Found 10-bit comparator lessequal for signal <n0346> created at line 76
+    Found 10-bit comparator lessequal for signal <n0348> created at line 76
+    Found 10-bit comparator lessequal for signal <n0358> created at line 77
+    Found 10-bit comparator lessequal for signal <n0361> created at line 77
+    Found 10-bit comparator lessequal for signal <n0363> created at line 77
+    Found 10-bit comparator lessequal for signal <n0375> created at line 78
+    Found 10-bit comparator lessequal for signal <n0377> created at line 78
+    Found 10-bit comparator lessequal for signal <n0381> created at line 78
+    Found 10-bit comparator lessequal for signal <n0383> created at line 78
+    Found 10-bit comparator lessequal for signal <n0387> created at line 78
+    Found 10-bit comparator lessequal for signal <n0389> created at line 78
+    Found 10-bit comparator lessequal for signal <n0393> created at line 78
+    Found 10-bit comparator lessequal for signal <n0395> created at line 78
+    Found 10-bit comparator lessequal for signal <n0399> created at line 78
+    Found 10-bit comparator lessequal for signal <n0401> created at line 78
+    Found 10-bit comparator lessequal for signal <n0405> created at line 78
+    Found 10-bit comparator lessequal for signal <n0409> created at line 78
+    Found 10-bit comparator lessequal for signal <n0411> created at line 78
+    Found 10-bit comparator lessequal for signal <n0415> created at line 78
+    Found 10-bit comparator lessequal for signal <n0417> created at line 78
+    Found 10-bit comparator lessequal for signal <n0423> created at line 78
+    Found 10-bit comparator lessequal for signal <n0425> created at line 78
+    Found 10-bit comparator lessequal for signal <n0429> created at line 78
+    Found 10-bit comparator lessequal for signal <n0433> created at line 78
+    Found 10-bit comparator lessequal for signal <n0435> created at line 78
+    Found 10-bit comparator lessequal for signal <n0439> created at line 78
+    Found 10-bit comparator lessequal for signal <n0441> created at line 78
+    Found 10-bit comparator lessequal for signal <n0445> created at line 78
+    Found 10-bit comparator lessequal for signal <n0447> created at line 78
+    Found 10-bit comparator lessequal for signal <n0451> created at line 78
+    Found 10-bit comparator lessequal for signal <n0453> created at line 78
+    Found 10-bit comparator lessequal for signal <n0457> created at line 78
+    Found 10-bit comparator lessequal for signal <n0459> created at line 78
+    Found 10-bit comparator lessequal for signal <n0463> created at line 78
+    Found 10-bit comparator lessequal for signal <n0465> created at line 78
+    Found 10-bit comparator lessequal for signal <n0469> created at line 78
+    Found 10-bit comparator lessequal for signal <n0471> created at line 78
+    Found 10-bit comparator lessequal for signal <n0475> created at line 78
+    Found 10-bit comparator lessequal for signal <n0477> created at line 78
+    Found 10-bit comparator lessequal for signal <n0481> created at line 78
+    Found 10-bit comparator lessequal for signal <n0483> created at line 78
+    Found 10-bit comparator lessequal for signal <n0487> created at line 78
+    Found 10-bit comparator lessequal for signal <n0489> created at line 78
+    Found 10-bit comparator lessequal for signal <n0493> created at line 78
+    Found 10-bit comparator lessequal for signal <n0495> created at line 78
+    Found 10-bit comparator lessequal for signal <n0499> created at line 78
+    Found 10-bit comparator lessequal for signal <n0503> created at line 78
+    Found 10-bit comparator lessequal for signal <n0505> created at line 78
+    Found 10-bit comparator lessequal for signal <n0515> created at line 79
+    Found 10-bit comparator lessequal for signal <n0517> created at line 79
+    Found 10-bit comparator lessequal for signal <n0521> created at line 79
+    Found 10-bit comparator lessequal for signal <n0523> created at line 79
+    Found 10-bit comparator lessequal for signal <n0527> created at line 79
+    Found 10-bit comparator lessequal for signal <n0529> created at line 79
+    Found 10-bit comparator lessequal for signal <n0533> created at line 79
+    Found 10-bit comparator lessequal for signal <n0535> created at line 79
+    Found 10-bit comparator lessequal for signal <n0540> created at line 79
+    Found 10-bit comparator lessequal for signal <n0544> created at line 79
+    Found 10-bit comparator lessequal for signal <n0546> created at line 79
+    Found 10-bit comparator lessequal for signal <n0550> created at line 79
+    Found 10-bit comparator lessequal for signal <n0552> created at line 79
+    Found 10-bit comparator lessequal for signal <n0556> created at line 79
+    Found 10-bit comparator lessequal for signal <n0558> created at line 79
+    Found 10-bit comparator lessequal for signal <n0562> created at line 79
+    Found 10-bit comparator lessequal for signal <n0564> created at line 79
+    Found 10-bit comparator lessequal for signal <n0568> created at line 79
+    Found 10-bit comparator lessequal for signal <n0570> created at line 79
+    Found 10-bit comparator lessequal for signal <n0576> created at line 79
+    Found 10-bit comparator lessequal for signal <n0578> created at line 79
+    Found 10-bit comparator lessequal for signal <n0582> created at line 79
+    Found 10-bit comparator lessequal for signal <n0584> created at line 79
+    Found 10-bit comparator lessequal for signal <n0588> created at line 79
+    Found 10-bit comparator lessequal for signal <n0590> created at line 79
+    Found 10-bit comparator lessequal for signal <n0595> created at line 79
+    Found 10-bit comparator lessequal for signal <n0597> created at line 79
+    Found 10-bit comparator lessequal for signal <n0602> created at line 79
+    Found 10-bit comparator lessequal for signal <n0607> created at line 79
+    Found 10-bit comparator lessequal for signal <n0609> created at line 79
+    Found 10-bit comparator lessequal for signal <n0613> created at line 79
+    Found 10-bit comparator lessequal for signal <n0617> created at line 79
+    Found 10-bit comparator lessequal for signal <n0621> created at line 79
+    Found 10-bit comparator lessequal for signal <n0623> created at line 79
+    Found 10-bit comparator lessequal for signal <n0630> created at line 79
+    Found 10-bit comparator lessequal for signal <n0632> created at line 79
+    Found 10-bit comparator lessequal for signal <n0640> created at line 80
+    Found 10-bit comparator lessequal for signal <n0648> created at line 80
+    Found 10-bit comparator lessequal for signal <n0664> created at line 80
+    Found 10-bit comparator lessequal for signal <n0683> created at line 81
+    Found 10-bit comparator lessequal for signal <n0692> created at line 81
+    Found 10-bit comparator lessequal for signal <n0702> created at line 81
+    Found 10-bit comparator lessequal for signal <n0727> created at line 82
+    Found 10-bit comparator lessequal for signal <n0733> created at line 82
+    Found 10-bit comparator lessequal for signal <n0742> created at line 82
+    Found 10-bit comparator lessequal for signal <n0747> created at line 82
+    Found 10-bit comparator lessequal for signal <n0749> created at line 82
+    Found 10-bit comparator lessequal for signal <n0756> created at line 82
+    Found 10-bit comparator lessequal for signal <n0763> created at line 82
+    Found 10-bit comparator lessequal for signal <n0765> created at line 82
+    Found 10-bit comparator lessequal for signal <n0791> created at line 84
+    Found 10-bit comparator lessequal for signal <n0795> created at line 84
+    Found 10-bit comparator lessequal for signal <n0802> created at line 84
+    Found 10-bit comparator lessequal for signal <n0808> created at line 84
+    Found 10-bit comparator lessequal for signal <n0815> created at line 84
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  26 D-type flip-flop(s).
+	inferred 165 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <gameover_menu> synthesized.
+
+Synthesizing Unit <RGB_mux>.
+    Related source file is "D:\Alireza\ISE\PONG\RGB_mux.vhd".
+    Found 2-bit register for signal <state>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 6                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 3                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | reset (positive)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00                                             |
+    | Power Up State     | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 9-bit comparator greater for signal <PWR_11_o_ball_y[8]_LessThan_3_o> created at line 35
+    Summary:
+	inferred   1 Comparator(s).
+	inferred   3 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <RGB_mux> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 8x3-bit single-port Read Only RAM                     : 1
+# Adders/Subtractors                                   : 15
+ 10-bit adder                                          : 3
+ 10-bit addsub                                         : 1
+ 10-bit subtractor                                     : 1
+ 11-bit adder                                          : 2
+ 11-bit subtractor                                     : 1
+ 2-bit adder                                           : 1
+ 20-bit adder                                          : 1
+ 25-bit adder                                          : 2
+ 32-bit adder                                          : 2
+ 9-bit subtractor                                      : 1
+# Registers                                            : 101
+ 1-bit register                                        : 95
+ 10-bit register                                       : 2
+ 2-bit register                                        : 1
+ 20-bit register                                       : 1
+ 25-bit register                                       : 2
+# Comparators                                          : 367
+ 10-bit comparator greater                             : 2
+ 10-bit comparator lessequal                           : 351
+ 11-bit comparator lessequal                           : 4
+ 9-bit comparator greater                              : 1
+ 9-bit comparator lessequal                            : 9
+# Multiplexers                                         : 22
+ 10-bit 2-to-1 multiplexer                             : 8
+ 2-bit 2-to-1 multiplexer                              : 1
+ 20-bit 2-to-1 multiplexer                             : 1
+ 25-bit 2-to-1 multiplexer                             : 2
+ 3-bit 2-to-1 multiplexer                              : 3
+ 32-bit 2-to-1 multiplexer                             : 6
+ 9-bit 2-to-1 multiplexer                              : 1
+# FSMs                                                 : 1
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <play_menu>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_RGB> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 3-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <(wall_on,bar_on,ball_on)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <RGB>           |          |
+    -----------------------------------------------------------------------
+Unit <play_menu> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 8x3-bit single-port distributed Read Only RAM         : 1
+# Adders/Subtractors                                   : 15
+ 10-bit adder                                          : 4
+ 10-bit addsub                                         : 1
+ 10-bit subtractor                                     : 1
+ 11-bit adder                                          : 2
+ 11-bit subtractor                                     : 1
+ 2-bit adder                                           : 1
+ 20-bit adder                                          : 1
+ 25-bit adder                                          : 2
+ 9-bit adder                                           : 1
+ 9-bit subtractor                                      : 1
+# Registers                                            : 187
+ Flip-Flops                                            : 187
+# Comparators                                          : 367
+ 10-bit comparator greater                             : 2
+ 10-bit comparator lessequal                           : 351
+ 11-bit comparator lessequal                           : 4
+ 9-bit comparator greater                              : 1
+ 9-bit comparator lessequal                            : 9
+# Multiplexers                                         : 84
+ 1-bit 2-to-1 multiplexer                              : 64
+ 10-bit 2-to-1 multiplexer                             : 8
+ 2-bit 2-to-1 multiplexer                              : 1
+ 20-bit 2-to-1 multiplexer                             : 1
+ 25-bit 2-to-1 multiplexer                             : 2
+ 3-bit 2-to-1 multiplexer                              : 3
+ 32-bit 2-to-1 multiplexer                             : 4
+ 9-bit 2-to-1 multiplexer                              : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <U5/FSM_0> on signal <state[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 10
+-------------------
+WARNING:Xst:2677 - Node <ball_x_speed_31> of sequential type is unconnected in block <play_menu>.
+WARNING:Xst:2677 - Node <ball_x_speed_30> of sequential type is unconnected in block <play_menu>.
+WARNING:Xst:2677 - Node <ball_x_speed_29> of sequential type is unconnected in block <play_menu>.
+WARNING:Xst:2677 - Node <ball_x_speed_28> of sequential type is unconnected in block <play_menu>.
+WARNING:Xst:2677 - Node <ball_x_speed_27> of sequential type is unconnected in block <play_menu>.
+WARNING:Xst:2677 - Node <ball_x_speed_26> of sequential type is unconnected in block <play_menu>.
+WARNING:Xst:2677 - Node <ball_x_speed_25> of sequential type is unconnected in block <play_menu>.
+WARNING:Xst:2677 - Node <ball_x_speed_22> of sequential type is unconnected in block <play_menu>.
+WARNING:Xst:2677 - Node <ball_x_speed_24> of sequential type is unconnected in block <play_menu>.
+WARNING:Xst:2677 - Node <ball_x_speed_23> of sequential type is unconnected in block <play_menu>.
+WARNING:Xst:2677 - Node <ball_x_speed_21> of sequential type is unconnected in block <play_menu>.
+WARNING:Xst:2677 - Node <ball_x_speed_20> of sequential type is unconnected in block <play_menu>.
+WARNING:Xst:2677 - Node <ball_x_speed_19> of sequential type is unconnected in block <play_menu>.
+WARNING:Xst:2677 - Node <ball_x_speed_18> of sequential type is unconnected in block <play_menu>.
+WARNING:Xst:2677 - Node <ball_x_speed_17> of sequential type is unconnected in block <play_menu>.
+WARNING:Xst:2677 - Node <ball_x_speed_16> of sequential type is unconnected in block <play_menu>.
+WARNING:Xst:2677 - Node <ball_x_speed_15> of sequential type is unconnected in block <play_menu>.
+WARNING:Xst:2677 - Node <ball_x_speed_14> of sequential type is unconnected in block <play_menu>.
+WARNING:Xst:2677 - Node <ball_x_speed_13> of sequential type is unconnected in block <play_menu>.
+WARNING:Xst:2677 - Node <ball_x_speed_12> of sequential type is unconnected in block <play_menu>.
+WARNING:Xst:2677 - Node <ball_x_speed_11> of sequential type is unconnected in block <play_menu>.
+WARNING:Xst:2677 - Node <ball_x_speed_10> of sequential type is unconnected in block <play_menu>.
+WARNING:Xst:2677 - Node <ball_y_speed_31> of sequential type is unconnected in block <play_menu>.
+WARNING:Xst:2677 - Node <ball_y_speed_30> of sequential type is unconnected in block <play_menu>.
+WARNING:Xst:2677 - Node <ball_y_speed_29> of sequential type is unconnected in block <play_menu>.
+WARNING:Xst:2677 - Node <ball_y_speed_28> of sequential type is unconnected in block <play_menu>.
+WARNING:Xst:2677 - Node <ball_y_speed_27> of sequential type is unconnected in block <play_menu>.
+WARNING:Xst:2677 - Node <ball_y_speed_26> of sequential type is unconnected in block <play_menu>.
+WARNING:Xst:2677 - Node <ball_y_speed_25> of sequential type is unconnected in block <play_menu>.
+WARNING:Xst:2677 - Node <ball_y_speed_24> of sequential type is unconnected in block <play_menu>.
+WARNING:Xst:2677 - Node <ball_y_speed_21> of sequential type is unconnected in block <play_menu>.
+WARNING:Xst:2677 - Node <ball_y_speed_23> of sequential type is unconnected in block <play_menu>.
+WARNING:Xst:2677 - Node <ball_y_speed_22> of sequential type is unconnected in block <play_menu>.
+WARNING:Xst:2677 - Node <ball_y_speed_20> of sequential type is unconnected in block <play_menu>.
+WARNING:Xst:2677 - Node <ball_y_speed_19> of sequential type is unconnected in block <play_menu>.
+WARNING:Xst:2677 - Node <ball_y_speed_18> of sequential type is unconnected in block <play_menu>.
+WARNING:Xst:2677 - Node <ball_y_speed_17> of sequential type is unconnected in block <play_menu>.
+WARNING:Xst:2677 - Node <ball_y_speed_16> of sequential type is unconnected in block <play_menu>.
+WARNING:Xst:2677 - Node <ball_y_speed_15> of sequential type is unconnected in block <play_menu>.
+WARNING:Xst:2677 - Node <ball_y_speed_14> of sequential type is unconnected in block <play_menu>.
+WARNING:Xst:2677 - Node <ball_y_speed_13> of sequential type is unconnected in block <play_menu>.
+WARNING:Xst:2677 - Node <ball_y_speed_12> of sequential type is unconnected in block <play_menu>.
+WARNING:Xst:2677 - Node <ball_y_speed_11> of sequential type is unconnected in block <play_menu>.
+WARNING:Xst:2677 - Node <ball_y_speed_10> of sequential type is unconnected in block <play_menu>.
+WARNING:Xst:2677 - Node <ball_y_speed_9> of sequential type is unconnected in block <play_menu>.
+WARNING:Xst:3002 - This design contains one or more registers/latches that are directly
+   incompatible with the Spartan6 architecture. The two primary causes of this is
+   either a register or latch described with both an asynchronous set and
+   asynchronous reset, or a register or latch described with an asynchronous
+   set or reset which however has an initialization value of the opposite 
+   polarity (i.e. asynchronous reset with an initialization value of 1).
+    While this circuit can be built, it creates a sub-optimal implementation
+   in terms of area, power and performance. For a more optimal implementation
+   Xilinx highly recommends one of the following:
+
+          1) Remove either the set or reset from all registers and latches
+             if not needed for required functionality
+          2) Modify the code in order to produce a synchronous set
+             and/or reset (both is preferred)
+          3) Ensure all registers have the same initialization value as the
+             described asynchronous set or reset polarity
+          4) Use the -async_to_sync option to transform the asynchronous
+             set/reset to synchronous operation
+             (timing simulation highly recommended when using this option)
+
+  Please refer to http://www.xilinx.com search string "Spartan6 asynchronous set/reset" for more details.
+
+  List of register instances with asynchronous set or reset and opposite initialization value:
+    ball_x_speed_0 in unit <play_menu>
+    ball_y_speed_0 in unit <play_menu>
+    bar_x_2 in unit <play_menu>
+    bar_x_4 in unit <play_menu>
+    bar_x_5 in unit <play_menu>
+    bar_x_7 in unit <play_menu>
+    ball_y_speed_1 in unit <play_menu>
+    ball_x_speed_1 in unit <play_menu>
+    ball_x_6 in unit <play_menu>
+    ball_x_8 in unit <play_menu>
+    ball_y_2 in unit <play_menu>
+    ball_y_3 in unit <play_menu>
+    ball_y_7 in unit <play_menu>
+
+
+Optimizing unit <main> ...
+
+Optimizing unit <sync_module> ...
+WARNING:Xst:1293 - FF/Latch <x_counter_div_1> has a constant value of 0 in block <sync_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x_counter_div_1> has a constant value of 0 in block <sync_module>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <play_menu> ...
+
+Optimizing unit <RGB_mux> ...
+WARNING:Xst:1293 - FF/Latch <U3/bar_x_0> has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <U2/animation_timer_var_6> in Unit <main> is equivalent to the following FF/Latch, which will be removed : <U4/animation_timer_var_6> 
+INFO:Xst:2261 - The FF/Latch <U2/animation_timer_var_7> in Unit <main> is equivalent to the following FF/Latch, which will be removed : <U4/animation_timer_var_7> 
+INFO:Xst:2261 - The FF/Latch <U2/animation_timer_var_8> in Unit <main> is equivalent to the following FF/Latch, which will be removed : <U4/animation_timer_var_8> 
+INFO:Xst:2261 - The FF/Latch <U2/animation_timer_var_9> in Unit <main> is equivalent to the following FF/Latch, which will be removed : <U4/animation_timer_var_9> 
+INFO:Xst:2261 - The FF/Latch <U2/animation_timer_var_10> in Unit <main> is equivalent to the following FF/Latch, which will be removed : <U4/animation_timer_var_10> 
+INFO:Xst:2261 - The FF/Latch <U2/animation_timer_var_11> in Unit <main> is equivalent to the following FF/Latch, which will be removed : <U4/animation_timer_var_11> 
+INFO:Xst:2261 - The FF/Latch <U2/animation_timer_var_12> in Unit <main> is equivalent to the following FF/Latch, which will be removed : <U4/animation_timer_var_12> 
+INFO:Xst:2261 - The FF/Latch <U2/animation_timer_var_13> in Unit <main> is equivalent to the following FF/Latch, which will be removed : <U4/animation_timer_var_13> 
+INFO:Xst:2261 - The FF/Latch <U2/animation_timer_var_14> in Unit <main> is equivalent to the following FF/Latch, which will be removed : <U4/animation_timer_var_14> 
+INFO:Xst:2261 - The FF/Latch <U2/animation_timer_var_20> in Unit <main> is equivalent to the following FF/Latch, which will be removed : <U4/animation_timer_var_20> 
+INFO:Xst:2261 - The FF/Latch <U2/animation_timer_var_15> in Unit <main> is equivalent to the following FF/Latch, which will be removed : <U4/animation_timer_var_15> 
+INFO:Xst:2261 - The FF/Latch <U2/animation_timer_var_21> in Unit <main> is equivalent to the following FF/Latch, which will be removed : <U4/animation_timer_var_21> 
+INFO:Xst:2261 - The FF/Latch <U2/animation_timer_var_16> in Unit <main> is equivalent to the following FF/Latch, which will be removed : <U4/animation_timer_var_16> 
+INFO:Xst:2261 - The FF/Latch <U2/animation_timer_var_22> in Unit <main> is equivalent to the following FF/Latch, which will be removed : <U4/animation_timer_var_22> 
+INFO:Xst:2261 - The FF/Latch <U2/animation_timer_var_17> in Unit <main> is equivalent to the following FF/Latch, which will be removed : <U4/animation_timer_var_17> 
+INFO:Xst:2261 - The FF/Latch <U2/animation_timer_var_23> in Unit <main> is equivalent to the following FF/Latch, which will be removed : <U4/animation_timer_var_23> 
+INFO:Xst:2261 - The FF/Latch <U2/animation_timer_var_18> in Unit <main> is equivalent to the following FF/Latch, which will be removed : <U4/animation_timer_var_18> 
+INFO:Xst:2261 - The FF/Latch <U2/animation_timer_var_24> in Unit <main> is equivalent to the following FF/Latch, which will be removed : <U4/animation_timer_var_24> 
+INFO:Xst:2261 - The FF/Latch <U2/animation_timer_var_19> in Unit <main> is equivalent to the following FF/Latch, which will be removed : <U4/animation_timer_var_19> 
+INFO:Xst:2261 - The FF/Latch <U3/ball_y_speed_2> in Unit <main> is equivalent to the following 6 FFs/Latches, which will be removed : <U3/ball_y_speed_3> <U3/ball_y_speed_5> <U3/ball_y_speed_6> <U3/ball_y_speed_4> <U3/ball_y_speed_7> <U3/ball_y_speed_8> 
+INFO:Xst:2261 - The FF/Latch <U3/ball_x_speed_2> in Unit <main> is equivalent to the following 7 FFs/Latches, which will be removed : <U3/ball_x_speed_3> <U3/ball_x_speed_4> <U3/ball_x_speed_5> <U3/ball_x_speed_6> <U3/ball_x_speed_7> <U3/ball_x_speed_8> <U3/ball_x_speed_9> 
+INFO:Xst:2261 - The FF/Latch <U4/animation_on> in Unit <main> is equivalent to the following FF/Latch, which will be removed : <U2/animation_on> 
+INFO:Xst:2261 - The FF/Latch <U2/animation_timer_var_0> in Unit <main> is equivalent to the following 2 FFs/Latches, which will be removed : <U4/animation_timer_var_0> <U1/x_counter_div_0> 
+INFO:Xst:2261 - The FF/Latch <U2/animation_timer_var_1> in Unit <main> is equivalent to the following FF/Latch, which will be removed : <U4/animation_timer_var_1> 
+INFO:Xst:2261 - The FF/Latch <U2/animation_timer_var_2> in Unit <main> is equivalent to the following FF/Latch, which will be removed : <U4/animation_timer_var_2> 
+INFO:Xst:2261 - The FF/Latch <U2/animation_timer_var_3> in Unit <main> is equivalent to the following FF/Latch, which will be removed : <U4/animation_timer_var_3> 
+INFO:Xst:2261 - The FF/Latch <U2/animation_timer_var_4> in Unit <main> is equivalent to the following FF/Latch, which will be removed : <U4/animation_timer_var_4> 
+INFO:Xst:2261 - The FF/Latch <U2/animation_timer_var_5> in Unit <main> is equivalent to the following FF/Latch, which will be removed : <U4/animation_timer_var_5> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block main, actual ratio is 24.
+WARNING:Xst:1426 - The value init of the FF/Latch U3/ball_x_speed_0_LD hinder the constant cleaning in the block main.
+   You should achieve better results by setting this init to 1.
+FlipFlop U1/x_counter_var_4 has been replicated 1 time(s)
+FlipFlop U1/x_counter_var_5 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 117
+ Flip-Flops                                            : 117
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : main.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1199
+#      GND                         : 1
+#      INV                         : 7
+#      LUT1                        : 66
+#      LUT2                        : 43
+#      LUT3                        : 73
+#      LUT4                        : 162
+#      LUT5                        : 168
+#      LUT6                        : 447
+#      MUXCY                       : 127
+#      MUXF7                       : 6
+#      VCC                         : 1
+#      XORCY                       : 98
+# FlipFlops/Latches                : 118
+#      FD                          : 13
+#      FDC                         : 91
+#      FDP                         : 13
+#      LD                          : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 9
+#      IBUF                        : 4
+#      OBUF                        : 5
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             118  out of  11440     1%  
+ Number of Slice LUTs:                  966  out of   5720    16%  
+    Number used as Logic:               966  out of   5720    16%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    978
+   Number with an unused Flip Flop:     860  out of    978    87%  
+   Number with an unused LUT:            12  out of    978     1%  
+   Number of fully used LUT-FF pairs:   106  out of    978    10%  
+   Number of unique control sets:         4
+
+IO Utilization: 
+ Number of IOs:                          10
+ Number of bonded IOBs:                  10  out of    102     9%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-------------------------------------------------------------------+------------------------------+-------+
+Clock Signal                                                       | Clock buffer(FF name)        | Load  |
+-------------------------------------------------------------------+------------------------------+-------+
+clk                                                                | BUFGP                        | 117   |
+U3/reset_start_button_OR_1462_o(U3/reset_start_button_OR_1462_o1:O)| NONE(*)(U3/ball_x_speed_0_LD)| 1     |
+-------------------------------------------------------------------+------------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 6.799ns (Maximum Frequency: 147.075MHz)
+   Minimum input arrival time before clock: 5.833ns
+   Maximum output required time after clock: 25.148ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 6.799ns (frequency: 147.075MHz)
+  Total number of paths / destination ports: 20603 / 117
+-------------------------------------------------------------------------
+Delay:               6.799ns (Levels of Logic = 14)
+  Source:            U3/bar_x_5_C_5 (FF)
+  Destination:       U3/bar_x_9 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: U3/bar_x_5_C_5 to U3/bar_x_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               6   0.525   0.984  U3/bar_x_5_C_5 (U3/bar_x_5_C_5)
+     LUT3:I1->O           13   0.250   1.374  U3/bar_x_51 (U3/bar_x_5)
+     LUT6:I2->O           10   0.254   1.008  U3/Mmux_bar_x[9]_GND_8_o_mux_23_OUT_rs_B<1>1 (U3/Mmux_bar_x[9]_GND_8_o_mux_23_OUT_rs_B<1>1)
+     LUT2:I1->O            2   0.254   0.725  U3/button_left_GND_8_o_AND_1597_o1 (U3/Mmux_bar_x[9]_GND_8_o_mux_23_OUT_rs_lut<0>)
+     MUXCY:CI->O           1   0.023   0.000  U3/Mmux_bar_x[9]_GND_8_o_mux_23_OUT_rs_cy<0> (U3/Mmux_bar_x[9]_GND_8_o_mux_23_OUT_rs_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  U3/Mmux_bar_x[9]_GND_8_o_mux_23_OUT_rs_cy<1> (U3/Mmux_bar_x[9]_GND_8_o_mux_23_OUT_rs_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  U3/Mmux_bar_x[9]_GND_8_o_mux_23_OUT_rs_cy<2> (U3/Mmux_bar_x[9]_GND_8_o_mux_23_OUT_rs_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  U3/Mmux_bar_x[9]_GND_8_o_mux_23_OUT_rs_cy<3> (U3/Mmux_bar_x[9]_GND_8_o_mux_23_OUT_rs_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  U3/Mmux_bar_x[9]_GND_8_o_mux_23_OUT_rs_cy<4> (U3/Mmux_bar_x[9]_GND_8_o_mux_23_OUT_rs_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  U3/Mmux_bar_x[9]_GND_8_o_mux_23_OUT_rs_cy<5> (U3/Mmux_bar_x[9]_GND_8_o_mux_23_OUT_rs_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  U3/Mmux_bar_x[9]_GND_8_o_mux_23_OUT_rs_cy<6> (U3/Mmux_bar_x[9]_GND_8_o_mux_23_OUT_rs_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  U3/Mmux_bar_x[9]_GND_8_o_mux_23_OUT_rs_cy<7> (U3/Mmux_bar_x[9]_GND_8_o_mux_23_OUT_rs_cy<7>)
+     MUXCY:CI->O           0   0.023   0.000  U3/Mmux_bar_x[9]_GND_8_o_mux_23_OUT_rs_cy<8> (U3/Mmux_bar_x[9]_GND_8_o_mux_23_OUT_rs_cy<8>)
+     XORCY:CI->O           1   0.206   0.682  U3/Mmux_bar_x[9]_GND_8_o_mux_23_OUT_rs_xor<9> (U3/bar_x[9]_GND_8_o_mux_23_OUT<9>)
+     LUT3:I2->O            1   0.254   0.000  U3/Mmux_bar_x[9]_bar_x[9]_mux_41_OUT101 (U3/bar_x[9]_bar_x[9]_mux_41_OUT<9>)
+     FDC:D                     0.074          U3/bar_x_9
+    ----------------------------------------
+    Total                      6.799ns (2.026ns logic, 4.773ns route)
+                                       (29.8% logic, 70.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 274 / 119
+-------------------------------------------------------------------------
+Offset:              5.833ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       U3/ball_x_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: reset to U3/ball_x_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            51   1.328   1.937  reset_IBUF (reset_IBUF)
+     LUT2:I0->O           55   0.250   1.859  U3/reset_start_button_OR_1462_o1 (U3/reset_start_button_OR_1462_o)
+     FDC:CLR                   0.459          U3/ball_y_8
+    ----------------------------------------
+    Total                      5.833ns (2.037ns logic, 3.796ns route)
+                                       (34.9% logic, 65.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 232948 / 5
+-------------------------------------------------------------------------
+Offset:              25.148ns (Levels of Logic = 16)
+  Source:            U1/x_counter_var_2 (FF)
+  Destination:       RGB<2> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: U1/x_counter_var_2 to RGB<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             60   0.525   2.127  U1/x_counter_var_2 (U1/x_counter_var_2)
+     LUT4:I1->O           86   0.235   2.208  U1/Msub_x_counter_xor<5>111 (U1/Msub_x_counter_xor<5>11)
+     LUT5:I3->O            2   0.250   0.726  U1/Msub_x_counter_xor<9>121 (U1/Msub_x_counter_xor<9>12)
+     LUT6:I5->O          228   0.254   2.879  U1/Msub_x_counter_xor<9>1 (x_counter<9>)
+     LUT6:I0->O           15   0.254   1.610  U4/GND_10_o_x_counter[9]_AND_1689_o11 (U2/x_counter[9]_GND_7_o_LessThan_1031_o11)
+     LUT6:I0->O            3   0.254   1.196  U2/x_counter[9]_GND_7_o_LessThan_91_o11 (U2/x_counter[9]_GND_7_o_LessThan_91_o)
+     LUT6:I1->O            1   0.254   0.682  U2/GND_7_o_GND_7_o_OR_1037_o2 (U2/GND_7_o_GND_7_o_OR_1037_o2)
+     LUT5:I4->O            3   0.254   0.766  U2/GND_7_o_GND_7_o_OR_1037_o10 (U2/GND_7_o_GND_7_o_OR_1037_o)
+     LUT6:I5->O            2   0.254   0.954  U2/GND_7_o_GND_7_o_OR_1040_o1 (U2/GND_7_o_GND_7_o_OR_1040_o)
+     LUT5:I2->O            3   0.235   0.766  U2/GND_7_o_GND_7_o_OR_1047_o3 (U2/GND_7_o_GND_7_o_OR_1047_o)
+     LUT4:I3->O            1   0.254   0.910  U2/GND_7_o_PWR_8_o_OR_1461_o79_SW0 (N192)
+     LUT6:I3->O            1   0.235   0.910  U2/GND_7_o_PWR_8_o_OR_1461_o79 (U2/GND_7_o_PWR_8_o_OR_1461_o81)
+     LUT5:I2->O            1   0.235   0.682  U2/GND_7_o_PWR_8_o_OR_1461_o83 (U2/GND_7_o_PWR_8_o_OR_1461_o85)
+     LUT5:I4->O            1   0.254   0.000  U2/GND_7_o_PWR_8_o_OR_1461_o120_F (N224)
+     MUXF7:I0->O           3   0.163   0.994  U2/GND_7_o_PWR_8_o_OR_1461_o120 (rgb_start<0>)
+     LUT6:I3->O            1   0.235   0.681  U5/RGB<1>3 (RGB_1_OBUF)
+     OBUF:I->O                 2.912          RGB_1_OBUF (RGB<1>)
+    ----------------------------------------
+    Total                     25.148ns (7.057ns logic, 18.091ns route)
+                                       (28.1% logic, 71.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'U3/reset_start_button_OR_1462_o'
+  Total number of paths / destination ports: 121 / 2
+-------------------------------------------------------------------------
+Offset:              14.357ns (Levels of Logic = 9)
+  Source:            U3/ball_x_speed_0_LD (LATCH)
+  Destination:       RGB<2> (PAD)
+  Source Clock:      U3/reset_start_button_OR_1462_o falling
+
+  Data Path: U3/ball_x_speed_0_LD to RGB<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q              62   0.581   2.142  U3/ball_x_speed_0_LD (U3/ball_x_speed_0_LD)
+     LUT3:I0->O           13   0.235   1.206  U3/bar_x_51 (U3/bar_x_5)
+     LUT5:I3->O            4   0.250   1.080  U3/Madd_n0121_xor<7>11 (U3/n0121<7>)
+     LUT4:I0->O            0   0.254   0.000  U3/Mcompar_GND_8_o_BUS_0003_LessThan_13_o_lutdi3 (U3/Mcompar_GND_8_o_BUS_0003_LessThan_13_o_lutdi3)
+     MUXCY:DI->O           1   0.393   0.790  U3/Mcompar_GND_8_o_BUS_0003_LessThan_13_o_cy<3> (U3/Mcompar_GND_8_o_BUS_0003_LessThan_13_o_cy<3>)
+     LUT6:I4->O            1   0.250   0.958  U3/Mcompar_GND_8_o_BUS_0003_LessThan_13_o_cy<4> (U3/GND_8_o_BUS_0003_LessThan_13_o)
+     LUT5:I1->O            2   0.254   1.181  U3/bar_on3 (U3/bar_on)
+     LUT6:I0->O            1   0.254   0.682  U5/RGB<1>2 (U5/RGB<1>1)
+     LUT6:I5->O            1   0.254   0.681  U5/RGB<1>3 (RGB_1_OBUF)
+     OBUF:I->O                 2.912          RGB_1_OBUF (RGB<1>)
+    ----------------------------------------
+    Total                     14.357ns (5.637ns logic, 8.720ns route)
+                                       (39.3% logic, 60.7% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+-------------------------------+---------+---------+---------+---------+
+                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------+---------+---------+---------+---------+
+U3/reset_start_button_OR_1462_o|         |    7.998|         |         |
+clk                            |    6.799|         |         |         |
+-------------------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 20.00 secs
+Total CPU time to Xst completion: 20.30 secs
+ 
+--> 
+
+Total memory usage is 316352 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   50 (   0 filtered)
+Number of infos    :   31 (   0 filtered)
+

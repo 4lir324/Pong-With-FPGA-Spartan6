@@ -1,0 +1,1 @@
+vhdtdtfi -prj PONG -o C:/Users/alipo/Desktop/ISE/PONG/start_menu.vhi -module start_menu -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work start_menu.vhd 

@@ -1,0 +1,6 @@
+work	"RGB_mux.vhd"
+work	"gameover_menu.vhd"
+work	"main.vhd"
+work	"play_menu.vhd"
+work	"start_menu.vhd"
+work	"sync_module.vhd"

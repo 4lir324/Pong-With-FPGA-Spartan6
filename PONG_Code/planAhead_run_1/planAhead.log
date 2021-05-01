@@ -1,0 +1,92 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Mon Feb 06 19:50:07 2017
+# Process ID: 10740
+# Log file: D:/Alireza/ISE/PONG/planAhead_run_1/planAhead.log
+# Journal file: D:/Alireza/ISE/PONG/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source D:/Alireza/ISE/PONG/pa.fromHdl.tcl
+# create_project -name PONG -dir "D:/Alireza/ISE/PONG/planAhead_run_1" -part xc6slx9tqg144-2
+create_project: Time (s): elapsed = 00:00:25 . Memory (MB): peak = 430.953 ; gain = 48.836
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "PORT.ucf" [current_fileset -constrset]
+Adding file 'D:/Alireza/ISE/PONG/PORT.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {sync_module.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {start_menu.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {RGB_mux.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {play_menu.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {gameover_menu.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {main.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set_property top main $srcset
+# add_files [list {PORT.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc6slx9tqg144-2
+Using Verific elaboration
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "D:/Alireza/ISE/PONG/sync_module.vhd" into library work
+Parsing VHDL file "D:/Alireza/ISE/PONG/start_menu.vhd" into library work
+Parsing VHDL file "D:/Alireza/ISE/PONG/RGB_mux.vhd" into library work
+Parsing VHDL file "D:/Alireza/ISE/PONG/play_menu.vhd" into library work
+Parsing VHDL file "D:/Alireza/ISE/PONG/gameover_menu.vhd" into library work
+Parsing VHDL file "D:/Alireza/ISE/PONG/main.vhd" into library work
+Loading clock regions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockBuffers.xml
+Loading package pin functions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/tqg144/Package.xml
+Loading io standards from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [D:/Alireza/ISE/PONG/PORT.ucf]
+Finished Parsing UCF File [D:/Alireza/ISE/PONG/PORT.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: f0c6aa9f
+open_rtl_design: Time (s): elapsed = 00:01:03 . Memory (MB): peak = 626.484 ; gain = 172.758
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin P30 [get_ports {RGB[2]}]
+endgroup
+set_property is_loc_fixed false [get_ports [list  {RGB[2]}]]
+set_property is_loc_fixed true [get_ports [list  {RGB[2]}]]
+set_property is_loc_fixed false [get_ports [list  {RGB[2]}]]
+set_property is_loc_fixed true [get_ports [list  {RGB[2]}]]
+undo
+INFO: [Common 17-17] undo 'set_property is_loc_fixed true [get_ports [list  {RGB[2]}]]'
+undo
+INFO: [Common 17-17] undo 'set_property is_loc_fixed false [get_ports [list  {RGB[2]}]]'
+undo
+INFO: [Common 17-17] undo 'set_property is_loc_fixed true [get_ports [list  {RGB[2]}]]'
+startgroup
+set_property package_pin P144 [get_ports {RGB[2]}]
+endgroup
+exit
+ERROR: [PlanAhead 12-106] *** Exception: ui.h.b: Found deleted key in HTclEventBroker. Verify if the classes listed here call cleanup()
+HTclEvent: SIGNAL_BUS_MODIFY   Classes: ui.views.aR 
+HTclEvent: SIGNAL_MODIFY   Classes: ui.views.aR 
+HTclEvent: DEBUG_PORT_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: DEBUG_CORE_CONFIG_CHANGE   Classes: ui.views.aR 
+ (See D:/Alireza/ISE/PONG\planAhead_pid10740.debug)
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Mon Feb 06 20:06:55 2017...
+INFO: [Common 17-83] Releasing license: PlanAhead
